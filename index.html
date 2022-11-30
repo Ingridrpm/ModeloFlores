@@ -141,263 +141,255 @@
                      when looking at its layout. The point of using Lorem Ipsumletters, as opposed to using</p>
                </div>
             </div>
-      </div>
-   </div>
-   <br/><br/>
-   <!-- end plant -->
-   <!-- about -->
-   <div id="identificador" class="about">
-      <div class="container" style="text-align: center;">
-         <h1>Bienvenido a <strong class="color">PlantsIdentifier!</strong></h1>
-         <p>Selecciona una imágen para idenetificar qué planta tienes y darte todas las especificaciones sobre tu planta.</p>
-      </div>
-      <div class="container">
-         <div class="container">
-            <div class="panel">               
-               <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
-               <label for="file-upload" id="file-drag" class="upload-box">
-                  <div id="upload-caption">Haga clic para seleccionar la imagen</div>
-                  <img id="image-preview" class="hidden" />
-               </label>
-            </div>
          </div>
+      </div>
+      <br /><br />
+      <!-- end plant -->
+      <!-- about -->
+      <div id="identificador" class="about">
+         <div class="container" style="text-align: center;">
+            <h1>Bienvenido a <strong class="color">PlantsIdentifier!</strong></h1>
+            <p>Selecciona una imágen para idenetificar qué planta tienes y darte todas las especificaciones sobre tu
+               planta.</p>
+         </div>
+         <div class="container">
+            <div class="container">
+               <div class="panel">
+                  <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                  <label for="file-upload" id="file-drag" class="upload-box">
+                     <div id="upload-caption">Haga clic para seleccionar la imagen</div>
+                     <img id="image-preview" class="hidden" />
+                  </label>
+               </div>
+            </div>
 
-         <div class="container">
-            <div class="button_group">
-               <input type="button" value="Limpiar" class="btn btn-lg btn-secondary" onclick="clearImage();" />
-               <p style="visibility: hidden;">---</p>
-               <input type="button" value="Predecir" class="btn btn-lg btn-primary" onclick="predict();" />
+            <div class="container">
+               <div class="button_group">
+                  <input type="button" value="Limpiar" class="btn btn-lg btn-secondary" onclick="clearImage();" />
+                  <p style="visibility: hidden;">---</p>
+                  <input type="button" value="Predecir" class="btn btn-lg btn-primary" onclick="predict();" />
+               </div>
             </div>
-         </div>
 
-         <div class="container">
-            <div id="image-box" class="hidden">
-               <img id="image-display" />
-               <svg id="loader" class="hidden" viewBox="0 0 32 32" width="100" height="100">
-                  <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
-               </svg>
-            </div>
-            <div style="text-align: center;font-weight: 900;" id="pred-result2" class="hidden"></div>
-         </div>
-      </div>
-   </div>
-   <!-- end about -->
-   <!--Gallery -->
-   <div id="gallery" class="Gallery">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="titlepage">
-                  <h2>Nuestra Galería </h2>
+            <div class="container">
+               <div id="image-box" class="hidden">
+                  <img id="image-display" />
+                  <svg id="loader" class="hidden" viewBox="0 0 32 32" width="100" height="100">
+                     <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+                  </svg>
                </div>
+               <div style="text-align: center;font-weight: 900;" id="pred-result2" class="hidden"></div>
             </div>
          </div>
       </div>
-      <div class="container-fluid margin-r-l">
-         <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
-               <div class="Gallery-box">
-                  <figure>
-                     <a href="images/1.jpg" class="fancybox" rel="ligthbox">
-                        <img src="images/1.jpg" class="zoom img-fluid " alt="">
-                     </a>
-                     <span class="hoverle">
-                        <a href="images/1.jpg" class="fancybox" rel="ligthbox">View</a>
-                     </span>
-                  </figure>
-               </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
-               <div class="Gallery-box">
-                  <figure>
-                     <a href="images/2.jpg" class="fancybox" rel="ligthbox">
-                        <img src="images/2.jpg" class="zoom img-fluid " alt="">
-                     </a>
-                     <span class="hoverle">
-                        <a href="images/1.jpg" class="fancybox" rel="ligthbox">View</a>
-                     </span>
-                  </figure>
-               </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 thumb">
-               <div class="Gallery-box">
-                  <figure>
-                     <a href="images/3.jpg" class="fancybox" rel="ligthbox">
-                        <img src="images/3.jpg" class="zoom img-fluid " alt="">
-                     </a>
-                     <span class="hoverle">
-                        <a href="images/3.jpg" class="fancybox" rel="ligthbox">View</a>
-                     </span>
-                  </figure>
-               </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
-               <div class="Gallery-box">
-                  <figure>
-                     <a href="images/4.jpg" class="fancybox" rel="ligthbox">
-                        <img src="images/4.jpg" class="zoom img-fluid " alt="">
-                     </a>
-                     <span class="hoverle">
-                        <a href="images/4.jpg" class="fancybox" rel="ligthbox">View</a>
-                     </span>
-                  </figure>
-               </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
-               <div class="Gallery-box">
-                  <figure>
-                     <a href="images/5.jpg" class="fancybox" rel="ligthbox">
-                        <img src="images/5.jpg" class="zoom img-fluid " alt="">
-                     </a>
-                     <span class="hoverle">
-                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">View</a>
-                     </span>
-                  </figure>
-               </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-               <div class="Gallery-box">
-                  <figure>
-                     <a href="images/6.jpg" class="fancybox" rel="ligthbox">
-                        <img src="images/6.jpg" class="zoom img-fluid " alt="">
-                     </a>
-                     <span class="hoverle">
-                        <a href="images/6.jpg" class="fancybox" rel="ligthbox">View</a>
-                     </span>
-                  </figure>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end Gallery -->
-      <!--contact -->
-      <div id="contact" class="contact">
+      <!-- end about -->
+      <!--Gallery -->
+      <div id="gallery" class="Gallery">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Contáctanos</h2>
+                     <h2>Nuestra Galería </h2>
                   </div>
                </div>
             </div>
+         </div>
+         <div class="container-fluid margin-r-l">
             <div class="row">
-               <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 paddimg-right">
-                  <div class="row">
-                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <form>
-                           <div class="row">
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <input class="form-control" placeholder="Nombre" type="text" name="Name">
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <input class="form-control" placeholder="Email" type="text" name="Email">
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <input class="form-control" placeholder="Teléfono" type="text" name="Phone">
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <textarea class="textarea>" placeholder="Mensaje" type="text"
-                                    name="Message"></textarea>
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <a href="#">Enviar</a>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="map_section">
-                           <figure><img src="images/map.jpg"></figure>
-                        </div>
-                     </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+                  <div class="Gallery-box">
+                     <figure>
+                        <a href="images/1.jpg" class="fancybox" rel="ligthbox">
+                           <img src="images/1.jpg" class="zoom img-fluid " alt="">
+                        </a>
+                        <span class="hoverle">
+                           <a href="images/1.jpg" class="fancybox" rel="ligthbox">View</a>
+                        </span>
+                     </figure>
                   </div>
                </div>
-               <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 paddimg-left">
-                  <div class="Nursery-img">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+                  <div class="Gallery-box">
                      <figure>
-                        <img src="images/contactimg.jpg" alt="img" />
-                        <div class="text-box">
-                           <h3>Identificador de plantas</h3>
-                        </div>
+                        <a href="images/2.jpg" class="fancybox" rel="ligthbox">
+                           <img src="images/2.jpg" class="zoom img-fluid " alt="">
+                        </a>
+                        <span class="hoverle">
+                           <a href="images/1.jpg" class="fancybox" rel="ligthbox">View</a>
+                        </span>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 thumb">
+                  <div class="Gallery-box">
+                     <figure>
+                        <a href="images/3.jpg" class="fancybox" rel="ligthbox">
+                           <img src="images/3.jpg" class="zoom img-fluid " alt="">
+                        </a>
+                        <span class="hoverle">
+                           <a href="images/3.jpg" class="fancybox" rel="ligthbox">View</a>
+                        </span>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+                  <div class="Gallery-box">
+                     <figure>
+                        <a href="images/4.jpg" class="fancybox" rel="ligthbox">
+                           <img src="images/4.jpg" class="zoom img-fluid " alt="">
+                        </a>
+                        <span class="hoverle">
+                           <a href="images/4.jpg" class="fancybox" rel="ligthbox">View</a>
+                        </span>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 thumb">
+                  <div class="Gallery-box">
+                     <figure>
+                        <a href="images/5.jpg" class="fancybox" rel="ligthbox">
+                           <img src="images/5.jpg" class="zoom img-fluid " alt="">
+                        </a>
+                        <span class="hoverle">
+                           <a href="images/5.jpg" class="fancybox" rel="ligthbox">View</a>
+                        </span>
+                     </figure>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="Gallery-box">
+                     <figure>
+                        <a href="images/6.jpg" class="fancybox" rel="ligthbox">
+                           <img src="images/6.jpg" class="zoom img-fluid " alt="">
+                        </a>
+                        <span class="hoverle">
+                           <a href="images/6.jpg" class="fancybox" rel="ligthbox">View</a>
+                        </span>
                      </figure>
                   </div>
                </div>
             </div>
          </div>
-      </div>
-      <!-- end contact -->
-
-      <!-- footer -->
-      <footer>
-         <div id="contact" class="footer">
+         <!-- end Gallery -->
+         <!--contact -->
+         <div id="contact" class="contact">
             <div class="container">
-               <div class="row pdn-top-30">
-                  <div class="col-md-12 ">
-                     <div class="footer-box">
-                        <div class="headinga">
-                           <h3>Address</h3>
-                           <span>Demo Store .New York United States</span>
-                           <p>(+71 98765348)</p>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2>Contáctanos</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 paddimg-right">
+                     <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                           <form>
+                              <div class="row">
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Nombre" type="text" name="Name">
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Email" type="text" name="Email">
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input class="form-control" placeholder="Teléfono" type="text" name="Phone">
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <textarea class="textarea>" placeholder="Mensaje" type="text"
+                                       name="Message"></textarea>
+                                 </div>
+                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <a href="#">Enviar</a>
+                                 </div>
+                              </div>
+                           </form>
                         </div>
-                        <ul class="location_icon">
-                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
-                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
-                           <li> <a href="#"><img src="icon/linkedin.png"></a></li>
-                           <li> <a href="#"><img src="icon/instagram.png"></a></li>
-                        </ul>
-                        <div class="menu-bottom">
-                           <ul class="link">
-                              <li> <a href="#">Home</a></li>
-                              <li> <a href="#">About</a></li>
-                              <li> <a href="#"> Plant</a></li>
-                              <li> <a href="#">Gallery</a></li>
-                              <li> <a href="#"> Contact us</a></li>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                           <div class="map_section">
+                              <figure><img src="images/map.jpg"></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 paddimg-left">
+                     <div class="Nursery-img">
+                        <figure>
+                           <img src="images/contactimg.jpg" alt="img" />
+                           <div class="text-box">
+                              <h3>Identificador de plantas</h3>
+                           </div>
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end contact -->
+
+         <!-- footer -->
+         <footer>
+            <div id="contact" class="footer">
+               <div class="container">
+                  <div class="row pdn-top-30">
+                     <div class="col-md-12 ">
+                        <div class="footer-box">
+                           <div class="headinga">
+                              <h2 style="color: white;"><strong>Product Development</strong></h2>
+                              <p>Universidad Galileo, 2022</p>
+                           </div>
+                           <ul class="location_icon">
+                              <li> <a href="#"><img src="icon/facebook.png"></a></li>
+                              <li> <a href="#"><img src="icon/Twitter.png"></a></li>
+                              <li> <a href="#"><img src="icon/linkedin.png"></a></li>
+                              <li> <a href="#"><img src="icon/instagram.png"></a></li>
                            </ul>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <p>Copyright 2019 All Rights Reserved Design By <a href="https://html.design/">Free Html Templates</a>
-                  </p>
+               <div class="copyright">
+                  <div class="container">
+                     <p>Desarrollado por Esteban Camargo, Ingrid Perez y Claudia Estrada</a>
+                     </p>
+                  </div>
                </div>
             </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
-      <script src="format.js"></script>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <!-- javascript -->
-      <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script>
-         $(document).ready(function () {
-            $(".fancybox").fancybox({
-               openEffect: "none",
-               closeEffect: "none"
+         </footer>
+         <!-- end footer -->
+         <!-- end footer -->
+         <!-- Javascript files-->
+         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+         <script src="format.js"></script>
+         <script src="js/jquery.min.js"></script>
+         <script src="js/popper.min.js"></script>
+         <script src="js/bootstrap.bundle.min.js"></script>
+         <script src="js/jquery-3.0.0.min.js"></script>
+         <script src="js/plugin.js"></script>
+         <!-- sidebar -->
+         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+         <script src="js/custom.js"></script>
+         <!-- javascript -->
+         <script src="js/owl.carousel.js"></script>
+         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+         <script>
+            $(document).ready(function () {
+               $(".fancybox").fancybox({
+                  openEffect: "none",
+                  closeEffect: "none"
+               });
+
+               $(".zoom").hover(function () {
+
+                  $(this).addClass('transition');
+               }, function () {
+
+                  $(this).removeClass('transition');
+               });
             });
 
-            $(".zoom").hover(function () {
-
-               $(this).addClass('transition');
-            }, function () {
-
-               $(this).removeClass('transition');
-            });
-         });
-
-      </script>
+         </script>
 </body>
 
 </html>
