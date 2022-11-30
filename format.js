@@ -53,13 +53,13 @@ async function initialize() {
 }
 
 async function predict() {
+  //$('#loadingModal').modal('show');
   // action for the submit button
   if (!imageDisplay.src || !imageDisplay.src.startsWith("data")) {
     window.alert("Please select an image before submit.");
     return;
   }
-
-
+  
 //**RESULTADOS MODELO 1
   let tensorImg = tf.browser.fromPixels(imagePreview).resizeNearestNeighbor([224,224]).toFloat().expandDims();
   prediction = await model.predict(tensorImg).data();
@@ -70,7 +70,7 @@ async function predict() {
   } 
   else if (prediction[1] === 1) 
   {
-    wwindow.location.href = "/plants.html?plant=2";
+    window.location.href = "/plants.html?plant=2";
   }  
   else if (prediction[2] === 1) 
   {
@@ -82,7 +82,7 @@ async function predict() {
   }  
   else if (prediction[4] === 1) 
   {
-    wwindow.location.href = "/plants.html?plant=5";
+    window.location.href = "/plants.html?plant=5";
   }    
   else 
   {
@@ -154,5 +154,6 @@ function show(el) {
   // show an element
   el.classList.remove("hidden");
 }
+
 
 initialize();
