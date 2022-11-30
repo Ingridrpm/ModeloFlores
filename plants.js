@@ -7,13 +7,13 @@ function init() {
         articulo("Dientes de león","https://es.wikipedia.org/wiki/Taraxacum_officinale");
     }
     else if (planta === 2) {
-        articulo("Margaritas","https://es.frwiki.wiki/wiki/P%C3%A2querette");
+        articulo("Margaritas","https://es.wikipedia.org/wiki/Bellis_perennis");
     }
     else if (planta === 3) {
         articulo("Tulipanes","https://es.wikipedia.org/wiki/Tulipa")
     }
     else if (planta === 4) {
-        articulo("Girasoles","https://es.frwiki.wiki/wiki/Tournesol")
+        articulo("Girasoles","https://es.wikipedia.org/wiki/Helianthus_annuus")
     }
     else if (planta === 5) {
         articulo("Rosas","https://es.wikipedia.org/wiki/Rosa")
@@ -24,6 +24,6 @@ function init() {
 }
 
 function articulo(nombre, url) {
-    document.getElementById("article").innerHTML = `<p>${nombre}</p><embed type="text/html" src="${url}"  width="1000" height="600"></embed>`;
+    document.getElementById("article").innerHTML = `<h4>Planta identificada: <strong>${nombre}</strong></h4><embed type="text/html" src="${url}"  width="1000" height="600"></embed>`;
 }
 
